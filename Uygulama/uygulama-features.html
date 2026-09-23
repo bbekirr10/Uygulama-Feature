@@ -1,0 +1,226 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uygulama-Feature</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      #showcase {
+        background: url("home-bg.jpeg");
+        background-position: center;
+        height: 500px;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .main-nav {
+        display: inline-block;
+        width: calc(100% - 99px);
+        text-align: right;
+      }
+
+      .main-head {
+        background-color: #fc997c;
+        padding: 10px;
+      }
+
+      .main-nav__items {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .main-nav__item {
+        display: inline-block;
+        margin: 0 10px;
+      }
+      .main-head-logo {
+        color: white;
+        text-decoration: none;
+        font-size: 21px;
+        font-weight: bold;
+      }
+      .main-nav__item a {
+        text-decoration: none;
+        color: #ffff;
+      }
+
+      .main-nav__item a:hover,
+      .main-nav__item:hover::before {
+        color: #2e4c6d;
+      }
+
+      .main-nav__item a:active,
+      .main-nav__item:active::before {
+        color: #fff;
+      }
+
+      .main-nav__item--login a {
+        background-color: #2e4c6d;
+        padding: 8px 12px;
+        border: 2px solid #fff;
+        border-radius: 5px;
+      }
+      .main-nav__item--login a:hover {
+        background-color: #fff;
+        color: #2e4c6d;
+        border: 2px solid #2e4c6d;
+      }
+
+      .main-nav__item::before {
+        content: "\2022";
+        color: #fff;
+      }
+      .main-nav__item--login::before {
+        content: none;
+      }
+
+      #how-it-works {
+        padding: 10px;
+        text-align: center;
+        color: #3e4555;
+      }
+
+      .row {
+        margin-bottom: 40px;
+        padding: 10px;
+      }
+
+      .col {
+        display: inline-block;
+        width: 30%;
+        margin: 8px;
+        padding: 16px;
+      }
+
+      .row h2 {
+        font-weight: 20px;
+      }
+
+      .icon-box h3 {
+        color: #3e4555;
+        font-size: 26px;
+      }
+
+      .col-2 {
+        width: calc(50% - 2px);
+        display: inline-block;
+        background-color: red;
+        height: 350px;
+        vertical-align: top;
+      }
+
+      .features__left {
+        background: url(features.jpeg);
+        background-size: cover;
+        background-position: top center;
+      }
+
+      .features__right {
+        background-color: #edf5f7;
+        padding: 40px;
+        vertical-align: top;
+      }
+
+      .features__right h3 {
+        font-size: 30px;
+      }
+
+      #features a {
+        background-color: #fc997c;
+        color: #fff;
+        padding: 7px 15px;
+        text-decoration: none;
+        font-size: 14px;
+        text-align: center;
+        border: 1px solid #fc997c;
+        border-radius: 3px;
+        display: inline-block;
+        margin-top: 15px;
+      }
+
+      #features a:hover {
+        border: 1px solid #fc997c;
+        background-color: #fff;
+        color: #fc997c;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main-head">
+      <a href="#" class="main-head-logo">MovieApp</a>
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a href="#">Filmler</a></li>
+          <li class="main-nav__item"><a href="#">Diziler</a></li>
+          <li class="main-nav__item main-nav__item--login">
+            <a href="#">Giriş</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="showcase">
+        <h1>Welcome to Movie App</h1>
+      </section>
+
+      <section id="how-it-works">
+        <div class="row">
+          <h2>How it Works</h2>
+          <p>
+            We will show you step by step how to start watching your favorite
+            movies & tv shows starting now!
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="icon-box col">
+            <h3>Register</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet
+              autem, eos accusantium repellendus voluptate quod.
+            </p>
+          </div>
+          <div class="icon-box col">
+            <h3>Chose a Plan</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
+              ipsam adipisci aliquid alias, nemo velit?
+            </p>
+          </div>
+          <div class="icon-box col">
+            <h3>Enjoy Movify</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Quibusdam nihil ut cupiditate! Quos, officiis eveniet?
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="features">
+        <div class="row">
+          <div class="col-2 features__left"></div>
+          <div class="col-2 features__right">
+            <h3>Watch All Movies & TV Shows once They Get Released!</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet,
+              ad! Ea laborum blanditiis hic atque libero dolorum omnis
+              distinctio obcaecati cumque! Suscipit tenetur vitae corporis aut
+              iusto. Facilis, minus nobis.
+            </p>
+            <a href="#">View Features</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
